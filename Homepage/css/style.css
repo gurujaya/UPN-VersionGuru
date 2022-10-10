@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.btn-primary {
+    background-color: #F96A70 !important;
+    border-color: hsl(357, 92%, 70%) !important;
+
+}
+.hero-div {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  
+  .hero-div #righ {
+    background-image: url("./pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  @media screen and (max-width: 780px) {
+    .hero-div #righ {
+      display: none;
+    }
+  }
+  
+  .hero-div .col {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    background-color: #e1575d;
+    position: relative;
+  }
+  
+  .hero-div .col #whiteblob {
+    position: absolute;
+    top: 45%;
+    right: -50px;
+    width: 90%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  @media screen and (max-width: 780px) {
+    .hero-div .col #whiteblob {
+      right: 0;
+      width: 105%;
+    }
+  }
+  
+  .hero-div .col #box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 908px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 756px;
+  }
+  
+  .hero-div .col #box h1 {
+    font-size: 68px;
+    font-weight: 700;
+  }
+  
+  .hero-div .col #box p {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  .hero-div .col #box div #resources {
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #cc3f45;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-div .col #box div #resources:hover {
+    background-color: white;
+    border: solid 2px #cc3f45;
+    color: #cc3f45;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-div .col #box div #donate {
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    color: #cc3f45;
+    border-radius: 8px;
+    font-weight: 600;
+    border: solid 2px #cc3f45;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-div .col #box div #donate:hover {
+    background-color: #cc3f45;
+    color: white;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-div .col #redblob {
+    position: absolute;
+    opacity: 30%;
+    mix-blend-mode: soft-light;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 110%;
+  }
+  
+  .hero-div #wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+  }
+  /*# sourceMappingURL=style.css.map */
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    position: relative;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.about-header-container {
+    position: relative;
+    overflow: hidden;
+}
+.about-img {
+    height: 22vh;
+}
+.head {
+    position: relative;
+    font-family: "Merriweather Sans";
+    font-weight: 300;
+    color: #212121;
+    flex: 1 1 0;
+    font-size: 1.7rem;
+    min-width: 400px;
+    margin-top: 3vh;
+}
+.mission {
+    position: absolute;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    top: 0vh;
+    left: 12vw;
+    color: #212121;
+}
+
+.image {
+    flex: 1 1 0;
+    display: flex;
+    flex-flow: row nowrap;
+    min-width: 400px;
+}
+.rect {
+    flex: none;
+
+    width: 100%;
+    border-radius: 15px;
+}
+@media screen and (max-width: 700px) {
+    .rect {
+        top: -15px;
+        left: -15px;
+    }
+    .dots {
+        bottom: -15px;
+        right: -15px;
+    }
+}
+.group-img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    flex: none;
+    margin-left: -97%;
+    margin-top: 3%;
+}
+
+.dots {
+    flex: none;
+    margin-left: -25%;
+    margin-bottom: -70%;
+    max-width: 30%;
+    object-fit: contain;
+}
+
+.green {
+    background: rgba(99, 212, 113, 0.14);
+    position: relative;
+    height: 49vh;
+    width: 100%;
+    margin-top: 23vh;
+}
+
+.circle-red {
+    width: 4.7rem;
+}
+
+.history-red {
+    position: absolute;
+    left: 11.5vw;
+    top: -11%;
+}
+
+.history-icon {
+    position: absolute;
+    width: 3.6rem;
+    left: 12.2vw;
+    top: -8.3%;
+}
+
+.history h2 {
+    color: #f96a70;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    position: absolute;
+    left: 18vw;
+    top: -8%;
+}
+
+.history p {
+    font-family: "Merriweather Sans";
+    font-style: normal;
+    font-weight: 300;
+    width: 36%;
+    position: absolute;
+    left: 11.5vw;
+    top: 12%;
+    font-size: 1.6rem;
+}
+
+.team-red {
+    position: absolute;
+    left: 55vw;
+    top: -11%;
+}
+
+.team-icon {
+    position: absolute;
+    width: 3.6rem;
+    left: 55.62vw;
+    top: -8.4%;
+}
+
+.team h2 {
+    color: #f96a70;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    position: absolute;
+    left: 61.5vw;
+    top: -8%;
+}
+
+.team p {
+    font-family: "Merriweather Sans";
+    font-style: normal;
+    font-weight: 300;
+    width: 36%;
+    position: absolute;
+    left: 55vw;
+    top: 12%;
+    font-size: 1.6rem;
+}
