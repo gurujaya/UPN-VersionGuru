@@ -9,9 +9,24 @@
 }
 
 .btn-primary {
-    background-color: #F96A70 !important;
-    border-color: hsl(357, 92%, 70%) !important;
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  color: #cc3f45;
+  border-radius: 8px;
+  font-weight: 600;
+  border: solid 2px #cc3f45;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 
+}
+.btn-primary:hover{
+  background-color: #cc3f45;
+    color: white;
+    border: #cc3f45;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .hero-div {
     width: 100vw;
@@ -305,4 +320,10 @@
     left: 55vw;
     top: 12%;
     font-size: 1.6rem;
+}
+.bg-primary{
+  background-color: rgba(99, 212, 113, 0.14) !important;
+}
+.bi{
+  color: #cc3f45;
 }
