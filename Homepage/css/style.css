@@ -327,3 +327,44 @@
 .bi{
   color: #cc3f45;
 }
+footer {
+  width: 100vw;
+
+  position: relative;
+  bottom: 0;
+}
+.hr {
+  width: 80%;
+  margin: auto;
+}
+.footerlinks {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.footerlinks li a {
+  text-decoration: none;
+  color: #0969da;
+}
+.footerlinks li a:hover {
+  text-decoration: underline;
+}
+.footercontainer {
+      padding: 3vh 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 10px;
+  width: clamp(80%, 80%, 72rem);
+}
+.footercontainer p {
+
+  color: #919191;
+}

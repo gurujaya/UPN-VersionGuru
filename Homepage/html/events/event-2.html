@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/eventstyles.css">
+    <link rel="stylesheet" href="/Homepage/html/events/eventstyles.css">
   <title>Document</title>
 </head>
 
@@ -19,10 +19,10 @@
     <div class=" p-3 mb-5 bg-body rounded">
       <div class="lh-lg text-center">
         <div class=" fs-1 fw-bold card-header">
-          Upcoming event
+          Past Event 
         </div>
         <div class="card-body">
-          <h5 class="card-title fs-1">Special Title-1</h5>
+          <h5 class="card-title fs-1">Special Title-2</h5>
           <p class="card-text fw-lighter fs-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis autem
             impedit accusamus dolor at sed asperiores, a explicabo sequi inventore laudantium cupiditate alias fugiat
             qui, laborum voluptates eaque molestias eos.Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -57,30 +57,8 @@
             </div>
           </div>
         </div>
-        <div id="countdown" class="card-footer text-muted mt-3">
-          <script>
-            function countdownTimer() {
-              const difference = +new Date("09-28-2022") - +new Date();
-              let remaining = "Event Has Ended ";
-
-              if (difference > 0) {
-                const parts = {
-                  days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                  hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                  minutes: Math.floor((difference / 1000 / 60) % 60),
-                  seconds: Math.floor((difference / 1000) % 60),
-                };
-                remaining = Object.keys(parts).map(part => {
-                  return `${parts[part]} ${part}`;
-                }).join(" ");
-              }
-
-              document.getElementById("countdown").innerHTML = remaining;
-            }
-
-            countdownTimer();
-            setInterval(countdownTimer, 1000);
-          </script>
+        <div class="card-footer text-muted mt-3">
+          Event Has Ended
         </div>
       </div>
     </div>
