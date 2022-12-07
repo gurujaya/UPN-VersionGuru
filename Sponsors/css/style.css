@@ -1,0 +1,129 @@
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.btn-primary {
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  color: #cc3f45;
+  border-radius: 8px;
+  font-weight: 600;
+  border: solid 2px #cc3f45;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+}
+.btn-primary:hover{
+  background-color: #cc3f45;
+    color: white;
+    border: #cc3f45;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.bi{
+    color: #cc3f45;
+  }
+  body{
+    margin:0;
+    padding:0;
+}
+.bg-primary{
+    background-color: #F96A70 !important;
+}
+
+
+
+#sponsors1{
+position: absolute;
+height: 15%;
+top:22vh;
+
+font-style: normal;
+font-weight: 700;
+font-size: 270px;
+line-height: 324px;
+text-align: center;
+
+mix-blend-mode: darken;
+opacity: 0.75;
+}
+
+
+#sponsorhead{
+text-align: center;
+font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 400%;
+
+color: #070707;
+
+mix-blend-mode: normal;
+}
+
+#group15{
+    width: 1440px;
+    top: 470px;
+}
+
+#group16{
+    width: 1240px;
+    height:935px;
+    padding-left: 95px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.thanks h2{
+  color:#F96A70;
+  font-size:3rem;
+
+  text-align:center;
+}
+
+.green-bg h3{
+  text-align:center;
+}
+
+.row-grid {
+  margin-top:10vh;
+  margin-bottom:10vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
