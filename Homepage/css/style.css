@@ -8,9 +8,19 @@
     color: black;
 }
 
+#events{
+  padding-right:15vw;
+  padding-left:15vw;
+}
+
+.event-link{
+  text-decoration: underline !important;
+  color: #0969da !important;
+}
+
 .btn-primary {
-  width: 130px;
-  height: 50px;
+  /* width: 130px;
+  height: 50px; */
   font-size: 20px;
   background-color: rgb(255, 255, 255);
   color: #cc3f45;
@@ -19,8 +29,19 @@
   border: solid 2px #cc3f45;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-
+  padding:10px;
 }
+
+.donate-btn{
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center; /* center the content horizontally */
+  align-items: center;
+  padding:0;
+}
+
 .btn-primary:hover{
   background-color: #cc3f45;
     color: white;
@@ -30,7 +51,7 @@
 }
 .hero-div {
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -59,9 +80,10 @@
   
   .hero-div .col #whiteblob {
     position: absolute;
-    top: 45%;
+    top: 55%;
     right: -50px;
     width: 90%;
+    height:80%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     z-index: 1;
@@ -69,8 +91,8 @@
   
   @media screen and (max-width: 780px) {
     .hero-div .col #whiteblob {
-      right: 0;
-      width: 105%;
+      left: 2vw;
+      width: 95%;
     }
   }
   
