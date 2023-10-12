@@ -4,7 +4,26 @@ html, body {
     margin-right: 0px;
     padding: 0px;
 }
-
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .row-grid{
+      width:80vw;
+    }
+    iframe{
+      width:80vw !important;
+    }
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 main {
     text-align: left;
     padding-bottom: 50px;
@@ -482,3 +501,4 @@ a.fom:hover {
           transform: scale(1, 0);
       }
   }
+  
